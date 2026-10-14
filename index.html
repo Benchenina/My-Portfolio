@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Benchenina Souhaib Meheni — 4th-Year Computer Science Student (ENSTA), AI & Applications. Software development, AI, game creation, data science." />
+  <title>Benchenina Souhaib Meheni — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/theme.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%2323233d'/><rect x='3' y='3' width='10' height='10' fill='%23f2c185'/><rect x='6' y='6' width='4' height='4' fill='%231a1b2f'/></svg>" />
+</head>
+<body>
+  <!-- pixel grid overlay -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-pixel"></span>
+        <span class="logo-text pixel">BS<span class="amber">.M</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#top" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#stack" class="nav-link">Stack</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://github.com/Benchenina" target="_blank" rel="noopener" class="btn btn-small btn-ghost nav-cta">GitHub ↗</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Switch to light mode" title="Toggle dark / light">🌙</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="badge pixel-small"><span class="dot"></span> ENSTA · 4TH YEAR · ALGIERS</div>
+          <h1 class="hero-name">Benchenina<br /><span class="amber-glow">Souhaib Meheni</span></h1>
+          <p class="pixel-subtitle pixel">4th-Year CS Student | AI &amp; Applications (ENSTA)</p>
+          <p class="hero-bio">
+            I build cozy software with serious engineering underneath — from cross-platform
+            <strong>games</strong> and <strong>pixel-art tools</strong> to <strong>AI prototypes</strong> and
+            <strong>data science</strong> pipelines. Passionate about clean code, playful interfaces,
+            and turning class projects into shipped products.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary pixel">▼ View Projects</a>
+            <a href="#contact" class="btn btn-glass">✉ Get in Touch</a>
+          </div>
+          <div class="hero-stats glass">
+            <div class="stat"><span class="stat-num pixel">5+</span><span class="stat-label">Projects shipped</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num pixel">3</span><span class="stat-label">PC · Android · Linux</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num pixel">4</span><span class="stat-label">Dev · AI · Games · Data</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="lofi-window glass">
+            <div class="window-bar">
+              <span class="w-dot r"></span><span class="w-dot y"></span><span class="w-dot g"></span>
+              <span class="window-title mono">lofi-session — now playing ♪</span>
+            </div>
+            <div class="pixel-scene" aria-hidden="true">
+              <div class="stars"></div>
+              <div class="moon"></div>
+              <div class="mountains"></div>
+              <div class="lake"></div>
+              <div class="equalizer"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="terminal mono">
+              <p><span class="t-green">➜</span> <span class="t-dim">~</span> whoami</p>
+              <p class="t-out">souhaib — cs@ensta, ai &amp; apps</p>
+              <p><span class="t-green">➜</span> <span class="t-dim">~</span> <span id="typing"></span><span class="caret">▊</span></p>
+            </div>
+          </div>
+          <div class="chip chip-1 pixel-small">♪ 92 BPM</div>
+          <div class="chip chip-2 pixel-small">◉ BUILD PASSING</div>
+        </div>
+      </div>
+      <div class="scroll-hint mono">scroll<span class="scroll-line"></span></div>
+    </section>
+
+    <!-- ============ STACK STRIP ============ -->
+    <section class="stack-strip" id="stack">
+      <div class="section-inner">
+        <p class="pixel label pixel">/// TOOLBOX</p>
+        <div class="pills">
+          <span>Python</span><span>C / C++</span><span>GDScript / Godot</span><span>Flutter</span>
+          <span>SQL · PostgreSQL</span><span>NoSQL · MongoDB</span><span>Jupyter</span>
+          <span>pandas · scikit-learn</span><span>Git · Linux</span><span>Bash</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <div class="section-inner">
+        <p class="pixel label pixel">/// 01 — ACCOMPLISHMENTS</p>
+        <h2 class="section-title">Professional <span class="rose">Projects</span></h2>
+        <p class="section-sub">Professional work in clean boxes — same lofi theme, no tricks.</p>
+        <div class="cards" id="cards">
+          <!-- PROJECT 1 -->
+          <article class="card glass reveal">
+            <div class="card-pixel-top"></div>
+            <div class="card-head">
+              <span class="card-index pixel">01</span>
+              <div class="platforms"><span>PC</span><span>Android</span><span>Linux</span></div>
+            </div>
+            <h3 class="card-title">Little Quest <span class="tag-cap">Projet Fin Prépa</span></h3>
+            <p class="card-desc">Preparatory capstone game — a small pixel-art adventure with quests, dialogues and boss rooms. Cross-compiled from a single codebase to desktop, Android and Linux with touch + keyboard controls.</p>
+            <div class="card-tags mono"><span>Godot</span><span>GDScript</span><span>Pixel Art</span><span>Cross-compile</span></div>
+            <div class="card-foot">
+              <a class="card-btn" href="https://github.com/Benchenina" target="_blank" rel="noopener">View on GitHub ↗</a>
+              <span class="card-meta mono">★ capstone · game</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="card glass reveal">
+            <div class="card-pixel-top amber"></div>
+            <div class="card-head">
+              <span class="card-index pixel">02</span>
+              <div class="platforms"><span>PC</span><span>Android</span><span>Linux</span></div>
+            </div>
+            <h3 class="card-title">Palette Forge</h3>
+            <p class="card-desc">Pixel-art palette generator built around the <strong>hue-shifting</strong> method — shadows drift toward cool hues, highlights toward warm ones. Export ASE / PNG / CSS, preview on live sprites. Runs on PC, Android and Linux.</p>
+            <div class="card-tags mono"><span>Flutter</span><span>Dart</span><span>Color Theory</span><span>ASE Export</span></div>
+            <div class="palette-preview" aria-hidden="true">
+              <i style="--c:#2b2d5c"></i><i style="--c:#4a4d8f"></i><i style="--c:#8b6f9e"></i><i style="--c:#d5979c"></i><i style="--c:#f2c185"></i><i style="--c:#ffe3b3"></i>
+            </div>
+            <div class="card-foot">
+              <a class="card-btn" href="https://github.com/Benchenina" target="_blank" rel="noopener">View on GitHub ↗</a>
+              <span class="card-meta mono">★ hue-shift engine</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="card glass reveal">
+            <div class="card-pixel-top rose"></div>
+            <div class="card-head">
+              <span class="card-index pixel">03</span>
+              <div class="platforms"><span>Jupyter</span><span>SQL</span><span>NoSQL</span></div>
+            </div>
+            <h3 class="card-title">Data Analysis &amp; Databases Suite</h3>
+            <p class="card-desc">A collection of data-science notebooks (<code>.ipynb</code>) and database labs — cleaning, EDA and visualization with pandas, plus relational modelling in SQL/PostgreSQL and document stores in MongoDB. Reproducible, documented, queryable.</p>
+            <div class="card-tags mono"><span>Jupyter</span><span>Python · pandas</span><span>PostgreSQL</span><span>MongoDB</span></div>
+            <div class="card-foot">
+              <a class="card-btn" href="https://github.com/Benchenina" target="_blank" rel="noopener">View on GitHub ↗</a>
+              <span class="card-meta mono">★ notebooks + schemas</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="card glass reveal">
+            <div class="card-pixel-top green"></div>
+            <div class="card-head">
+              <span class="card-index pixel">04</span>
+              <div class="platforms"><span>Demo</span><span>AI</span></div>
+            </div>
+            <h3 class="card-title">TinyMind — Local AI Demo <span class="tag-cap">mini-tool</span></h3>
+            <p class="card-desc">A tiny on-device classifier demo: train a digit / sprite recognizer, watch loss curves live, and run inference fully offline. Built to explain ML basics to classmates without any cloud dependency.</p>
+            <div class="card-tags mono"><span>Python</span><span>scikit-learn</span><span>Streamlit</span><span>Offline-first</span></div>
+            <div class="card-foot">
+              <a class="card-btn" href="https://github.com/Benchenina" target="_blank" rel="noopener">View on GitHub ↗</a>
+              <span class="card-meta mono">★ ai playground</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 5 -->
+          <article class="card glass reveal">
+            <div class="card-pixel-top slate"></div>
+            <div class="card-head">
+              <span class="card-index pixel">05</span>
+              <div class="platforms"><span>CLI</span><span>Linux</span></div>
+            </div>
+            <h3 class="card-title">pixelterm — Terminal Utility <span class="tag-cap">mini-tool</span></h3>
+            <p class="card-desc">A cozy CLI companion: preview pixel palettes and sprite sheets directly in the terminal, scaffold Godot / Python project templates, and sync dotfiles across machines with one command.</p>
+            <div class="card-tags mono"><span>Bash</span><span>Python</span><span>ANSI Art</span><span>Automation</span></div>
+            <div class="card-foot">
+              <a class="card-btn" href="https://github.com/Benchenina" target="_blank" rel="noopener">View on GitHub ↗</a>
+              <span class="card-meta mono">$ pip install pixelterm</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / FOOTER ============ -->
+    <footer class="contact" id="contact">
+      <div class="section-inner">
+        <p class="pixel label pixel">/// 02 — CONTACT</p>
+        <h2 class="section-title">Let's build something <span class="amber2">cozy</span>.</h2>
+        <p class="section-sub">Open to internships, collaborations and game jams. Fastest way to reach me is email — I read everything.</p>
+        <div class="contact-btns">
+          <a class="btn btn-primary pixel" href="mailto:as.benchenina@ensta.edu.dz">✉ as.benchenina@ensta.edu.dz</a>
+          <a class="btn btn-github" href="https://github.com/Benchenina" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            GitHub — @Benchenina
+          </a>
+        </div>
+        <div class="footer-bar mono">
+          <span>© <span id="year">2026</span> Benchenina Souhaib Meheni</span>
+          <span class="f-sep">·</span>
+          <span>ENSTA · AI &amp; Applications</span>
+          <span class="f-sep">·</span>
+          <span class="pixel-small">MADE WITH ♥ + PIXELS</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- floating scroll buttons -->
+  <div class="fabs">
+    <button id="toTop" class="fab pixel" aria-label="Scroll to top" title="Scroll to top">▲</button>
+    <button id="toBottom" class="fab pixel" aria-label="Scroll to bottom" title="Scroll to bottom">▼</button>
+  </div>
+
+  <script src="js/javascript.js"></script>
+</body>
+</html>
