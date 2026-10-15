@@ -34,7 +34,7 @@ Music/Portfolio/
 ## Features
 
 - Dark mode (default, deep indigo) + creamy light-pink mode with
-  darker square grid — toggle in top navbar (`🌙/☀️`), persisted
+  darker square grid — toggle in top navbar, persisted
   in `localStorage`, respects `prefers-color-scheme`.
 - Floating `▲` / `▼` buttons smooth-scroll all the way to top / bottom.
 - Responsive: desktop 2-column hero, tablet single column, mobile
